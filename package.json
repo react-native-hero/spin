@@ -1,0 +1,27 @@
+{
+  "name": "@react-native-hero/spin",
+  "version": "0.0.1",
+  "description": "react native spin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-hero/spin.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "spin"
+  ],
+  "author": "musicode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-native-hero/spin/issues"
+  },
+  "homepage": "https://github.com/react-native-hero/spin#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  }
+}
