@@ -3,10 +3,13 @@ import React, {
 } from 'react'
 
 import {
+  View,
   ActivityIndicator,
 } from 'react-native'
 
 import PropTypes from 'prop-types'
+
+import { SMALL } from './size'
 
 export default class Spin extends PureComponent {
 
@@ -16,7 +19,7 @@ export default class Spin extends PureComponent {
   }
 
   static defaultProps = {
-    size: 'small',
+    size: SMALL,
     color: '#999',
   }
 

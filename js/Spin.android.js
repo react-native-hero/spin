@@ -8,6 +8,8 @@ import {
 
 import PropTypes from 'prop-types'
 
+import { SMALL } from './size'
+
 class Spin extends PureComponent {
 
   static propTypes = {
@@ -16,7 +18,7 @@ class Spin extends PureComponent {
   }
 
   static defaultProps = {
-    size: 'small',
+    size: SMALL,
     color: '#999',
   }
 
@@ -27,10 +29,22 @@ class Spin extends PureComponent {
       color,
     } = this.props
 
+    // 尺寸和 ios 保持一致
+    let width = 20
+    let height = 20
+    if (size !== SMALL) {
+      width = height = 36
+    }
+
     return (
       <RNTSpin
-        size={size === 'small' ? 10 : 20}
         color={color}
+        style={{
+          width,
+          height,
+          // ios 是居中的表现
+          alignSelf: 'center',
+        }}
       />
     )
 
